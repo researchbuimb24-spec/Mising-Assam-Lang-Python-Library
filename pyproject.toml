@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mising"
+version = "0.1.0"
+description = "A comprehensive Python library for Natural Language Processing and computational linguistics for the Mising language."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    { name = "Mising NLP Project Contributors" }
+]
+keywords = [
+    "nlp",
+    "mising",
+    "mishing",
+    "tani",
+    "sino-tibetan",
+    "assam",
+    "indigenous-languages",
+    "low-resource-nlp",
+    "tokenization",
+    "morphology",
+    "pos-tagging",
+    "transliteration",
+    "corpus",
+    "language-learning"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: Assamese",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Text Processing :: Linguistic",
+]
+requires-python = ">=3.7"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "flake8>=5.0",
+]
+
+[project.scripts]
+mising = "mising.cli:main"
+
+[project.urls]
+"Homepage" = "https://github.com/mising-nlp/mising"
+"Bug Tracker" = "https://github.com/mising-nlp/mising/issues"
+"Documentation" = "https://github.com/mising-nlp/mising#readme"
